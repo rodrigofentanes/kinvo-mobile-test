@@ -1,85 +1,100 @@
+<img src="./images/logo.sample.png" alt="Logo of the project" align="right">
 
-# React Native Code Challenge
+# Name of the project &middot; [![Build Status](https://img.shields.io/travis/npm/npm/latest.svg?style=flat-square)](https://travis-ci.org/npm/npm) [![npm](https://img.shields.io/npm/v/npm.svg?style=flat-square)](https://www.npmjs.com/package/npm) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/your/your-project/blob/master/LICENSE)
+> Additional information or tag line
 
-## Instruções:
+A brief description of your project, what it is used for.
 
-1. Faça um fork deste repositório;
-2. Siga as especificações;
-3. Implemente o layout disponível;
-4. Após terminar seu teste submeta um pull request e aguarde seu feedback.
+## Installing / Getting started
 
-## Especificações:
+A quick introduction of the minimal setup you need to get a hello world up &
+running.
 
-O desafio consiste em desenvolver um aplicativo de **2 telas, sendo obrigatório o desenvolvimento da Tela Inicial e mais uma à sua escolha, dentre as telas descritas abaixo**.
+```shell
+commands here
+```
+
+Here you should say what actually happens when you execute the code above.
+
+## Developing
+
+### Built With
+List main libraries, frameworks used including versions (React, Angular etc...)
+
+### Prerequisites
+What is needed to set up the dev environment. For instance, global dependencies or any other tools. include download links.
 
 
-As telas que contem chamadas a api devem estar preparadas para tratar estados de erro (sem internet), carregamento (chamada a api em andamento) e lista vazia (quando o resultado de um filtro não contem itens).
+### Setting up Dev
 
-**Atentar para o comportamento dos elementos do layout, como: botão de favorito, classificação em estrelas, rentabilidade, etc (encontram-se no XD).**
+Here's a brief intro about what a developer must do in order to start developing
+the project further:
 
-### Tela "Desafio" (Tela inicial)
+```shell
+git clone https://github.com/your/your-project.git
+cd your-project/
+packagemanager install
+```
 
-- A tela inicial contem uma lista que permite o usuário navegar para as três telas: Ações, Fundos e Previdências.
+And state what happens step-by-step. If there is any virtual environment, local server or database feeder needed, explain here.
 
-### Tela "Ações"
+### Building
 
-- A lista de "ações" deve ser carregada através de uma chamada a api.
-  - Api: https://d68b5a2f-8234-4863-9c81-7c8a95dff8eb.mock.pstmn.io/stocks
-- A lista de "ações" deve obedecer a seguinte prioridade:
-   - Favoritadas deve aparecer primeiro
-   - Ordem alfabética
-- O usuário pode favoritar/desfavoritar uma "ação" tocando no ícone do coração(o coração preenchido indica favoritado e o coração vazado indica desfavoritado).
-- A lista de "ações" inicia com todos as "ações" desfavoritadas.
+If your project needs some additional steps for the developer to build the
+project after some code changes, state them here. for example:
 
-### Tela "Fundos"
+```shell
+./configure
+make
+make install
+```
 
-- A lista de "fundos" deve ser carregada através de uma chamada a api.
-  - Api: https://d68b5a2f-8234-4863-9c81-7c8a95dff8eb.mock.pstmn.io/funds
-- A lista de "fundos" deve estar em ordem alfabética.
-- Os estados do fundo são:
-  - 0: Comum
-  - 1: Novo
-  - 2: Fechado
-- Um "fundo" com o estado de "comum" deve apresentar o layout básico conforme layout.
-- Um "fundo" com o estado de "novo" deve apresentar o layout básico com a adição do label "novo" conforme layout.
-- Um "fundo" com o estado de "fechado" tem um layout particular alem do label "fechado" conforme layout.
+Here again you should state what actually happens when the code above gets
+executed.
 
-### Tela "Previdências"
+### Deploying / Publishing
+give instructions on how to build and release a new version
+In case there's some step you have to take that publishes this project to a
+server, this is the right time to state it.
 
-- A lista de "previdências" deve ser carregada através de uma chamada a api.
-  - Api: https://d68b5a2f-8234-4863-9c81-7c8a95dff8eb.mock.pstmn.io/pension
-- A lista de "previdências" deve estar em ordem alfabética.
-- A tela contem um filtro de múltipla escolha que atua sobre a lista de "previdências". Quando selecionado os filtros:
-   - "SEM TAXA": inclui as previdências com taxa igual a zero.
-   - "R$100,00": inclui as previdências com valor mínimo igual a cem reais.
-   - "D+1": inclui as previdências com resgate igual a um.
+```shell
+packagemanager deploy your-project -s server.com -u username -p password
+```
 
-### Pré-requisitos:
+And again you'd need to tell what the previous code actually does.
 
-- Criar um passo a passo de como rodar o app - [Sugestão](https://github.com/elsewhencode/project-guidelines/blob/master/README.sample.md);
-- Desenvolver o app utilizando `React Native`
+## Versioning
 
-### O que iremos avaliar
+We can maybe use [SemVer](http://semver.org/) for versioning. For the versions available, see the [link to tags on this repository](/tags).
 
-- Capacidade de abstração
-- Simplicidade da solução
-- Componentização
-- Princípio da reutilização
-- Clean Code
 
-### O que vai te diferenciar
+## Configuration
 
-- Utilizar TypeScript
-- Realizar testes unitários
+Here you should write what are all of the configurations a user can enter when using the project.
 
-## Material:
+## Tests
 
-- O layout em formato Adobe XD consta no repositório em [/material](/material);
-- Imagens e Ícones devem ser exportados do Adobe XD (Aalho: CTRL + E / CMD + E)
+Describe and show how to run the tests with code examples.
+Explain what these tests test and why.
 
-## Submissão
+```shell
+Give an example
+```
 
-Para iniciar o teste, faça um fork deste repositório, crie uma branch com o seu nome e depois envie-nos o pull request.
-Se você apenas clonar o repositório não vai conseguir fazer push e depois vai ser mais complicado fazer o pull request.
+## Style guide
 
-**Sucesso!**
+Explain your code style and show how to check it.
+
+## Api Reference
+
+If the api is external, link to api documentation. If not describe your api including authentication methods as well as explaining all the endpoints with their required parameters.
+
+
+## Database
+
+Explaining what database (and version) has been used. Provide download links.
+Documents your database design and schemas, relations etc... 
+
+## Licensing
+
+State what the license is and how to find the text version of the license.
