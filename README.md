@@ -1,4 +1,4 @@
-<img src="./img/kLo.png" alt="Logo of the project" align="right" height="100px"> 
+<img src="./img/kLo.png" alt="Logo of the project" align="right" height="200px"> 
 
 # Kinvo Challenge
  [![Build Status](https://img.shields.io/travis/npm/npm/latest.svg?style=flat-square)](https://travis-ci.org/npm/npm) 
